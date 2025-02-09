@@ -1,0 +1,156 @@
+/* src/styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f9f9f9;
+  }
+  
+  .app-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .calendar-container {
+    margin-bottom: 20px;
+  }
+  
+  .calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+  }
+  
+  .calendar-header-cell {
+    background: #ddd;
+    text-align: center;
+    padding: 5px;
+    font-weight: bold;
+  }
+  
+  /* 기본 날짜 셀 스타일 */
+  .calendar-cell {
+    background: #fff;
+    border: 1px solid #ccc;
+    min-height: 80px;
+    position: relative;
+    padding: 5px;
+    transition: background-color 0.3s, border 0.3s;
+  }
+  
+  /* 일요일: 예, 연한 분홍 계열 */
+  .calendar-cell.sunday {
+    background-color: #ffe6e6;
+  }
+  
+  /* 토요일: 예, 연한 파랑 계열 */
+  .calendar-cell.saturday {
+    background-color: #e6f7ff;
+  }
+  
+  /* 오늘 날짜 셀 강조 */
+  .calendar-cell.today {
+    border: 2px solid #007bff;
+  }
+  
+  /* 날짜 번호 위치 */
+  .date-number {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    font-weight: bold;
+  }
+  
+  /* 개선된 일정 개수 표시 UI: 배지(pill) 형태 */
+  .todo-count {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    background: linear-gradient(135deg, #ff7f50, #ff6347);
+    color: white;
+    padding: 2px 6px;
+    border-radius: 12px;
+    font-size: 10px;
+    font-weight: bold;
+  }
+  
+  /* 빈 셀 스타일 */
+  .empty-cell {
+    background: #f0f0f0;
+    height: 80px;
+  }
+  
+  .controls {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .todo-input-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .todo-input-container form {
+    display: inline-block;
+  }
+  
+  .todo-input-container label {
+    margin: 0 10px;
+  }
+  
+  /* TodoList 스타일 */
+  .todo-list-container {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background: #fff;
+  }
+  
+  .todo-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .todo-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  
+  .todo-item input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  .todo-item.completed span {
+    text-decoration: line-through;
+    color: gray;
+  }
+
+  .calendar-cell.selected {
+    background-color: #007bff; /* 파란색 배경 */
+    color: #fff; /* 글자 색상 흰색 */
+
+  }
+
+  .stats-container {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .stats-container h2 {
+    margin-bottom: 15px;
+  }
+  
+  .stats-results {
+    margin-top: 20px;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+  }
+  
+  .stats-results p {
+    margin: 5px 0;
+  }
