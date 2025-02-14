@@ -79,7 +79,7 @@ Swagger - API 문서를 자동으로 생성하는 도구
 JUnit5 & Mockito - 단위 테스트 및 통합 테스트를 위한 라이브러리
 
 ### Frontend
-#### Claendar 
+#### Calendar 
 - 날짜별 할 일(To-Do) 개수를 표시하여 일정 관리 가능
 - 날짜 선택 시 해당 날짜의 할 일을 불러오는 기능 제공
 
