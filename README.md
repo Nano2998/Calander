@@ -29,10 +29,9 @@ spring.application.name=calander
 spring.jpa.properties.hibernate.dialect= org.hibernate.dialect.MySQLDialect
 spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
 spring.datasource.url=jdbc:mysql://localhost:3306/calender
-spring.datasource.username=root
-spring.datasource.password=your_password
+spring.datasource.username=사용자 이름
+spring.datasource.password=사용자 비밀번호
 spring.jpa.hibernate.ddl-auto=create
-spring.jpa.properties.hibernate.format_sql=true
 ```
 
 #### 3) MySQL 데이터베이스 및 테이블 생성
